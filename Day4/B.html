@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Document</title>
+</head>
+<body>
+
+   <button onclick="Fetch()">Fetch</button>
+ 
+   <script>
+       function Fetch()
+       {
+            var encoded =   localStorage.getItem("key");
+
+            var decoded = window.atob(encoded);
+          
+           alert  ("hi "+ decoded);
+       }
+   </script>
+</body>
+</html>

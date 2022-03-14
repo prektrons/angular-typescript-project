@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Document</title>
+</head>
+<body>
+
+   <button onclick="Store()">Save</button>
+   <a href="B.html"> Second Page</a> 
+   <script>
+       function Store()
+       {
+            var data = "mahesh";
+            var encoded = window.btoa(data);
+            localStorage.setItem("key", encoded);
+       }
+   </script>
+</body>
+</html>

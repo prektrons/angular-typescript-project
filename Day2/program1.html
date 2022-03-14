@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Demo Callback</title>
+    <script>
+
+        function DoSomething()
+        {
+            console.log("Hello")
+        }
+
+        
+
+        // console.log("Hi");
+        // DoSomething();
+        // console.log("Bye");
+
+        console.log("Hi");
+        window.setTimeout(DoSomething, 5000);
+        console.log("Bye");
+
+       
+    </script>
+</head>
+<body>
+    <button onclick="alert('disturb')">Make JS Engine Work</button>
+</body>
+</html>

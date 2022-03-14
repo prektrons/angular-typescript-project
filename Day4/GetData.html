@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+   <center>
+    <div id="container">
+       
+    </div>
+   </center>
+    <script>
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = ()=>{
+            if(xhr.status == 200 && xhr.readyState == 4)
+            {
+               var jsondata = JSON.parse( xhr.responseText);
+               var users =   jsondata.data   ;
+               debugger;
+
+               var refToContainer = document.getElementById("container")
+               for(i=0;i<users.length;i++)
+               {
+                  var content =  `<img src="${users[i].avatar}" 
+                                style="height: 100px;width: 100px;" >
+                                <h1>${users[i].first_name} ${users[i].last_name}
+                                </h1>`;
+                refToContainer.innerHTML = refToContainer.innerHTML + content;
+               }
+            }
+        }
+        xhr.open("GET","https://reqres.in/api/users");
+        xhr.send();
+    </script>
+</body>
+</html>

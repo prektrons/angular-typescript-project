@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Demo</title>
+    <script>
+
+        var promise = new Promise((resolve, reject)=>
+                            {
+                                debugger;
+                                //condition to resolve some problem
+                                if(10>2) //let us say this takes time
+                                {
+                                    resolve("Successwala Data");
+                                }
+                                else
+                                {
+                                    reject("failureWala Data");
+                                }
+                            });
+
+        debugger;
+        promise.then((data)=>{console.log(data + " 10 is greater than 2");})
+               .then(()=>{console.log("done!")})
+               .catch((data)=>{console.log("Something has gone wrong!")})
+
+        
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
