@@ -1,0 +1,39 @@
+<p>typecar works!</p>
+<h1>Method 1(using ngFor and ngIf)</h1>
+<ng-container *ngFor="let item of Sedan">
+    <ng-container *ngIf="item.ModelName.indexOf('all')">
+      <ul>
+        <li>
+          {{ item.ModelName}} is from {{item.CompanyName}}
+        </li>
+      </ul>
+    </ng-container>
+    </ng-container>
+<hr>
+<ng-container *ngFor="let item of SUV">
+    <ng-container *ngIf="item.ModelName.indexOf('all') ">
+      <ul>
+        <li>
+          {{ item.ModelName}} is from {{item.CompanyName}}
+        </li>
+      </ul>
+    </ng-container>
+    </ng-container>
+<hr>
+    <ng-container *ngFor="let item of Small">
+        <ng-container *ngIf="item.ModelName.indexOf('all') ">
+          <ul>
+            <li>
+              {{ item.ModelName}} is from {{item.CompanyName}}
+            </li>
+          </ul>
+        </ng-container>
+        </ng-container>
+
+ <h1>Method 2</h1>       
+
+ <h3>{{ Sedan1.ModelName}} is from {{Sedan1.CompanyName}}</h3>
+ <hr>
+ <h3>{{SUV1.ModelName}} is from {{SUV1.CompanyName}}</h3>
+ <hr>
+ <h3>{{ Small1.ModelName}} is from {{Small1.CompanyName}}</h3>

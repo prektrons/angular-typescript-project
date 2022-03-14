@@ -1,0 +1,27 @@
+<p>text works!</p>
+<div>
+    This is a paragraph
+</div>
+
+<h1 [innerText]="title"></h1>
+ 
+<h2>Example 1</h2>
+<button (click)="clickMe()">Click Me</button>
+<p>You have clicked {{clickCount}}</p>
+
+<div *ngFor="let item of items; let Twinkle = index">
+    <div class="selection">
+      <input
+        type="checkbox"
+        [(ngModel)]="item.selected"
+        [checked]="item.selected"
+      />
+    </div>
+    <div
+      class="selected-div"
+      [style.backgroundColor]="item.selected ? 'blue' : 'white'"
+    >
+      Twinkle Twinkle little Star How I wonder What You Are {{ Twinkle }}
+    </div>
+  </div>
+
