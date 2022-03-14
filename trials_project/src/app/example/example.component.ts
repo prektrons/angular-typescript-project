@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ExampleComponent implements OnInit {
   title='Pipe Example';
   birthday = new Date(1987, 6, 18);
+  price = 100.123456;
   students: any[] = [
     {
         ID: 'std101', Name: 'RaKesh ROUT',
