@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ExampleComponent } from './example/example.component';
 import { EmpInfoComponent } from './emp-info/emp-info.component';
+import { ProductInfoComponent } from './product-info/product-info.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ExampleComponent,
     EmpInfoComponent,
+    ProductInfoComponent,
     
   ],
   imports: [
