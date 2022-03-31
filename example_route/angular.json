@@ -1,12 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "cli": {
-    "analytics": "bcd9a9bd-aa39-412c-84b6-24805674959b"
+    "analytics": "2f56ba1e-d9d1-4623-93fe-9028b0cefa94"
   },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "project-path": {
+    "example_route": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/project-path",
+            "outputPath": "dist/example_route",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -71,10 +71,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "project-path:build:production"
+              "browserTarget": "example_route:build:production"
             },
             "development": {
-              "browserTarget": "project-path:build:development"
+              "browserTarget": "example_route:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -82,7 +82,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "project-path:build"
+            "browserTarget": "example_route:build"
           }
         },
         "test": {
@@ -105,5 +105,5 @@
       }
     }
   },
-  "defaultProject": "project-path"
+  "defaultProject": "example_route"
 }
