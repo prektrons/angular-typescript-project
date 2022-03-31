@@ -1,12 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "cli": {
-    "analytics": "bcd9a9bd-aa39-412c-84b6-24805674959b"
+    "analytics": "86a3b41f-8294-4aa5-b569-c2f9a2d84856"
   },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "project-path": {
+    "book_routing": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/project-path",
+            "outputPath": "dist/book_routing",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -71,10 +71,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "project-path:build:production"
+              "browserTarget": "book_routing:build:production"
             },
             "development": {
-              "browserTarget": "project-path:build:development"
+              "browserTarget": "book_routing:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -82,7 +82,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "project-path:build"
+            "browserTarget": "book_routing:build"
           }
         },
         "test": {
@@ -105,5 +105,5 @@
       }
     }
   },
-  "defaultProject": "project-path"
+  "defaultProject": "book_routing"
 }
